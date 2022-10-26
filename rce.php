@@ -48,7 +48,7 @@ include("up.php");
 <?php
 if (isset($_POST['page'])){
   echo "<pre>";
-  $aaaa = exec("ping ". $_POST['page']); 
+  $aaaa = exec("ping ". $_POST['page'] . " -c 4");
   echo $aaaa;
   if(strpos($aaaa, "=") !== false){
     if(strpos($aaaa, "m") !== false){
