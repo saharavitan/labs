@@ -32,31 +32,28 @@ include("up.php");
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
-            <form method="get" action="#">
-                what is your name ? <br><br> <input type="text" name="username" value="" placeholder="David Cohen">
-                <input type="submit" value="ok">
-            </form>
-            <br>
-            <?php if(isset($_GET['username'])){ ?>
+        <?php
+        // you cannot do anything without ...
+
+        // no parentheses ...
+        $escaped = preg_replace("/[()]/", "", $_GET['payload']);
+
+        // no event handlers!
+        $escaped = preg_replace("/.*o.*n.*/i", "", $escaped);
+        ?>
+
+        <h1>Hello, <?= $escaped ?>!</h1>
 
 
+        <h1>inject</h1>
+        <form>
+            <input type="text" name="payload" placeholder="your payload here">
+            <input type="submit" value="GO">
+        </form>
 
-                <script>
-                    var text = "שלום";
-                    console.log('היי מה קורה <?php echo htmlentities($_GET["username"], ENT_QUOTES, "UTF-8"); ?> היי');
-                </script>
+        <br><br>
+    </div>
 
-                <script>
-                    var text = "atras";
-                    <?php $payload = str_replace("<", "", $_GET["username"])?>
-                    console.log('שלום עולם <?php echo $payload; ?> עדן');
-                </script>
-            <?php } ?>
-
-            <br><br>
-
-
-            <?php
-            include("down.php")
-            ?>
+    <?php
+    include("down.php")
+    ?>

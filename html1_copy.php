@@ -21,7 +21,7 @@ include("up.php");
             <!-- Topbar Search -->
             <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                 <div class="input-group">
-                    <h3> Inject <font color="red">alert</font> command</h3>
+                    <h3>Inject <font color="red">img</font></h3>
 
                 </div>
             </form>
@@ -33,22 +33,17 @@ include("up.php");
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-            <form method="POST">
-                <br><br> <input type="text" name="username" value="" placeholder="David Cohen"> <br>
-                <br><br> <input type="text" name="test" value="test" hidden> <br>
-                <input type="submit" value="ok">
+
+
+
+            <form action="xss_here.php" method="post">
+<textarea name="user" rows="10" cols="50">
+<?php if(isset($_POST['user'])){echo " " . $_POST['user'];} else{ echo "";} ?>
+</textarea>
+                     <br><br>
+                                                <input type="submit" value="Send">
             </form>
-            <br>
-            <?php if($_POST['test'] == "test"){
-
-                echo $_POST["username"];
-
-
-            } ?>
-
-            <br><br>
-
-
             <?php
-            include("down.php")
+            include("down.php");
             ?>
+

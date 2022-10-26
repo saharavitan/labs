@@ -74,10 +74,19 @@
         <div id="html" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">get all scores</h6>
-            <a class="collapse-item" href="html1.php">Level 1</a>
-            <a class="collapse-item" href="html2.php">Level 2</a>
+              <a class="collapse-item" href="html1.php">Level 1</a>
+              <a class="collapse-item" href="html2.php">Level 2</a>
+              <a class="collapse-item" href="html1_copy.php">Level 1 copy</a>
+              <a class="collapse-item" href="modal.php">modal</a>
             <a class="collapse-item" href="html3.php">Level 3</a>
-            <a class="collapse-item" href="‏‏html3-copy.php">Level 3 copy</a>
+
+              <a class="collapse-item" href="WEB3.php">Level 1</a>
+              <a class="collapse-item" href="test1.php">test 1</a>
+              <a class="collapse-item" href="test2.php">test 2</a>
+              <a class="collapse-item" href="test3.php">test 3</a>
+              <a class="collapse-item" href="test4.php">test 4</a>
+              <a class="collapse-item" href="test5.php">test 5</a>
+              <a class="collapse-item" href="test6+.php">test 6</a>
           </div>
         </div>
       </li>
@@ -124,9 +133,11 @@
             <a class="collapse-item" href="xss6.php">Level 6</a>
             <a class="collapse-item" href="xss7.php">Level 7</a>
             <a class="collapse-item" href="xss8.php">Level 8</a>
-            <a class="collapse-item" href="xss9.php">Level 9</a>
-            <a class="collapse-item" href="xss10.php">Level 10</a>
-            <a class="collapse-item" href="xss11.php">Level 11</a>
+          <a class="collapse-item" href="xss9.php">Level 9</a>
+          <a class="collapse-item" href="xss10.php">Level 10</a>
+          <a class="collapse-item" href="xss11.php">Level 11</a>
+          <a class="collapse-item" href="xss12.php">Level 12</a>
+          <a class="collapse-item" href="xss13.php">Level 13</a>
 
           </div>
         </div>

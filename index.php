@@ -37,7 +37,6 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          
 
 
 
@@ -51,6 +50,7 @@
 
 
 
+            <!-- ["CodeIgniter", "/workspace/vendor/codeigniter", "VENDORPATH/codeigniter"] 192.168.1.1-->
 
 <div class="container-fluid">
 
@@ -72,7 +72,7 @@
                   <p class="text-lg mb-0">           <b><p> Welcome to Sahar Avitan's Challenge System.<br>
             Here you can legally practice all the vulnerabilities found on websites on the Internet.
             <br><br>
-            I'm sure you'll succeed :)
+            I'm sure you'll <a href="test.zip">succeed</a> :)
 <br>
 Coded by Sahar Avitan
 </p></b></p>
