@@ -1,0 +1,2 @@
+Hello,<br> 
+try to get <b>"WINDOWS\win.ini"</b> file.

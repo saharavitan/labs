@@ -1,0 +1,12 @@
+﻿<?php
+$cookie_name = "auth";
+$cookie_value = "// removed";
+
+setcookie($cookie_name, $cookie_value, time()+0.1, "/");
+
+if(!isset($_COOKIE[$cookie_name])) {
+   	echo " ";
+} else {
+	echo "Great, The flag is : // removed";
+}
+?>
