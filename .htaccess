@@ -1,16 +1,19 @@
-
-# BEGIN WordPress
-# ההוראות (שורות) בין "BEGIN WordPress" לבין "END WordPress" הן
-# נוצר באופן דינמי, ויש לשנות אותן רק באמצעות פילטרים של וורדפרס.
-# כל שינוי בהוראות בין סממנים אלה ידרס.
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /challenges/
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /challenges/index.php [L]
-</IfModule>
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# END WordPress
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost [NC]
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost.*$ [NC]
+RewriteRule \.(aaaa|bbbbb)$ – [F]
+ErrorDocument 404 /404.php
+
+
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
