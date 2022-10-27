@@ -137,7 +137,9 @@
           <a class="collapse-item" href="xss10.php">Level 10</a>
           <a class="collapse-item" href="xss11.php">Level 11</a>
           <a class="collapse-item" href="xss12.php">Level 12</a>
-          <a class="collapse-item" href="xss13.php">Level 13</a>
+              <a class="collapse-item" href="xss13.php">Level 13</a>
+              <a class="collapse-item" href="xss14.php">Level 14</a>
+              <a class="collapse-item" href="xss15.php">Level 15</a>
 
           </div>
         </div>
