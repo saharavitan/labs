@@ -41,7 +41,7 @@
             
                 what is your name ? <br><br> <input type="text" placeholder="David Cohen" name="username" value='<?php if(isset($_GET['username'])){print $_GET['username']; } ?>'> 
                 <input type="submit" value="ok">
-                </form>
+            </form>
                 <br>
                 <br><br>
                 
