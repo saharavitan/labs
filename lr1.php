@@ -41,7 +41,8 @@ if (!isset($_GET['page'])){
 <hr>
 <?php
 $page = str_replace("\\", "", $_GET['page']);
-if (str_starts_with($page, '/')) {
+$len = strlen($page);
+if (substr($page, 0, $len) == "/") {
   $page = substr($page, 1);
 }
 $page = str_replace("../", "", $page);
