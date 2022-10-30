@@ -43,6 +43,7 @@ include("up.php");
 <?php
 if (is_array($_POST['username'])) {
     echo "<b>Stack Trace:</b> <br><br>";
+    echo "<b>Stack Trace:</b>";
 } else {
     echo $_POST['username'];
 }

@@ -43,6 +43,7 @@ include("up.php");
             <?php
              if (is_array($_GET['username'])) {
                 echo "<b>Stack Trace:</b> <br><br>";
+                echo "<b>Stack Trace:</b>";
                 } else {
                  echo $_GET['username'];
              }
