@@ -180,7 +180,9 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="param1.php">Level 1</a>
             <a class="collapse-item" href="param2.php">Level 2</a>
-            <a class="collapse-item" href="param3.php">Level 3</a>
+              <a class="collapse-item" href="param3.php">Level 3</a>
+              <a class="collapse-item" href="param4.php">Level 4</a>
+              <a class="collapse-item" href="param5.php">Level 5</a>
           </div>
         </div>
       </li>
