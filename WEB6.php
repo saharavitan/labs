@@ -52,7 +52,7 @@ include("up.php");
         <p> Username : someone </p>
         <p> Password : // removed </p>
         Enter Username :  <br> <input type="text" name="username" value="" placeholder="David Cohen"> <br><br>
-        Enter Password :  <br> <input type="password" name="password" value="" placeholder="*******" onkeypress='validate(event)'> <br><br>
+        Enter Password :  <br> <input type="password" name="password" value="" placeholder="*******"> <br><br>
         <input type="hidden" name="auth" value="false" />
         <input type="submit" value="Login">
         <br><br>
