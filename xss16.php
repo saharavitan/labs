@@ -58,7 +58,7 @@ include("up.php");
             </script>
 
             <script>
-                const x = lol => {console.log("<?= $_GET["middle"] ?>");}
+                const x = () => {console.log("<?= $_GET["middle"] ?>");}
                 x();
             </script>
 
