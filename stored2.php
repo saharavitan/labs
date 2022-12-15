@@ -1,7 +1,7 @@
 <?php
 include("up.php");
 
-$myfile = fopen("stored2Text.txt", "w") or die("Unable to open file!");
+$myfile = fopen("stored2Text.txt", "w");
 $txt = $_GET['username'];
 fwrite($myfile, $txt);
 fclose($myfile);

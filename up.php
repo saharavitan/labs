@@ -167,9 +167,9 @@
               <a class="collapse-item" href="stored1.php">Level 1</a>
               <a class="collapse-item" href="stored2.php">Level 2</a>
               <a class="collapse-item" href="stored3.php">Level 3</a>
-              <a class="collapse-item" href="getstored1.php">get level 1</a>
-              <a class="collapse-item" href="getstored2.php">get level 2</a>
-              <a class="collapse-item" href="getstored3.php">get level 3</a>
+              <a class="collapse-item" href="stored1get.php">get level 1</a>
+              <a class="collapse-item" href="stored2get.php">get level 2</a>
+              <a class="collapse-item" href="stored3get.php">get level 3</a>
           </div>
         </div>
       </li>
