@@ -1,11 +1,15 @@
 <?php
 include("up.php");
 
-echo file_put_contents("stored1Text.txt","Hello World. Testing!");
-$myfile = fopen("stored1Text.txt", "w");
-$txt = $_GET['username'];
-fwrite($myfile, $txt);
-fclose($myfile);
+
+if (isset($_GET['username'])){
+    $myfile = fopen("stored1Text.txt", "w") or die("Unable to open file!");
+    $txt = $_GET['username']. "\n";
+    fwrite($myfile, $txt);
+    fclose($myfile);
+    echo htmlentities($_POST['text'], ENT_QUOTES, 'UTF-8') . "save in log file";
+}
+
 
 ?>
 
