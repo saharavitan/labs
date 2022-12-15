@@ -1,10 +1,18 @@
 <?php
 include("up.php");
 
-$myfile = fopen("stored3Text.txt", "w") or die("Unable to open file!");
-$txt = $_GET['username'];
-fwrite($myfile, $txt);
-fclose($myfile);
+if (isset($_GET['username'])){
+    $filename = 'stored3Text.txt';
+
+    if (file_exists($filename)) {
+        chmod($filename, 0777);
+    }
+    $myfile = fopen("stored3Text.txt", "a") or die("Unable to open file!");
+    $txt = $_GET['username']. "\n";
+    fwrite($myfile, $txt);
+    fclose($myfile);
+    echo htmlentities($_GET['username'], ENT_QUOTES, 'UTF-8') . "save in log file";
+}
 
 ?>
 

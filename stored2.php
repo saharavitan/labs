@@ -1,10 +1,13 @@
 <?php
 include("up.php");
 
-$myfile = fopen("stored2Text.txt", "w");
-$txt = $_GET['username'];
-fwrite($myfile, $txt);
-fclose($myfile);
+if (isset($_GET['username'])){
+    $myfile = fopen("stored2Text.txt", "a") or die("Unable to open file!");
+    $txt = $_GET['username']. "\n";
+    fwrite($myfile, $txt);
+    fclose($myfile);
+    echo htmlentities($_GET['username'], ENT_QUOTES, 'UTF-8') . "save in log file";
+}
 
 ?>
 
