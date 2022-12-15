@@ -160,17 +160,33 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Cookies" aria-expanded="true" aria-controls="Cookies">
-          <span><b>     Cookies</b></span>
+          <span><b>     Stored</b></span>
         </a>
         <div id="Cookies" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="coo1.php">Level 1</a>
-            <a class="collapse-item" href="coo2.php">Level 2</a>
-            <a class="collapse-item" href="coo3.php">Level 3</a>
+              <a class="collapse-item" href="stored1.php">Level 1</a>
+              <a class="collapse-item" href="stored2.php">Level 2</a>
+              <a class="collapse-item" href="stored3.php">Level 3</a>
+              <a class="collapse-item" href="getstored1.php">get level 1</a>
+              <a class="collapse-item" href="getstored2.php">get level 2</a>
+              <a class="collapse-item" href="getstored3.php">get level 3</a>
           </div>
         </div>
       </li>
 
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Cookies" aria-expanded="true" aria-controls="Cookies">
+                <span><b>     Cookies</b></span>
+            </a>
+            <div id="Cookies" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="coo1.php">Level 1</a>
+                    <a class="collapse-item" href="coo2.php">Level 2</a>
+                    <a class="collapse-item" href="coo3.php">Level 3</a>
+                </div>
+            </div>
+        </li>
 
 
       <li class="nav-item">
