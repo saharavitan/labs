@@ -1,6 +1,7 @@
 <?php
 include("up.php");
 
+file_put_contents("stored1Text.txt","Hello World. Testing!");
 $myfile = fopen("stored1Text.txt", "w");
 $txt = $_GET['username'];
 fwrite($myfile, $txt);
@@ -41,7 +42,7 @@ fclose($myfile);
         <div class="container-fluid">
             <h3>XSS - Level 1 </h3>
             <hr>
-            <form method="get" action="#">
+            <form method="get">
                 what is your name ? <br><br> <input type="text" name="username" value="" placeholder="David Cohen">
                 <input type="submit" value="ok">
             </form>
