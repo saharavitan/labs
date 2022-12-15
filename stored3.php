@@ -2,11 +2,6 @@
 include("up.php");
 
 if (isset($_GET['username'])){
-    $filename = 'stored3Text.txt';
-
-    if (file_exists($filename)) {
-        chmod($filename, 0777);
-    }
     $myfile = fopen("stored3Text.txt", "a") or die("Unable to open file!");
     $txt = $_GET['username']. "\n";
     fwrite($myfile, $txt);
