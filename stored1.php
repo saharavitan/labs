@@ -1,7 +1,7 @@
 <?php
 include("up.php");
 
-file_put_contents("stored1Text.txt","Hello World. Testing!");
+echo file_put_contents("stored1Text.txt","Hello World. Testing!");
 $myfile = fopen("stored1Text.txt", "w");
 $txt = $_GET['username'];
 fwrite($myfile, $txt);
