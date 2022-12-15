@@ -3,7 +3,7 @@ include("up.php");
 
 
 if (isset($_GET['username'])){
-    $myfile = fopen("stored1Text.txt", "w") or die("Unable to open file!");
+    $myfile = fopen("stored1Text.txt", "a") or die("Unable to open file!");
     $txt = $_GET['username']. "\n";
     fwrite($myfile, $txt);
     fclose($myfile);
