@@ -6,7 +6,6 @@ if (isset($_GET['username'])){
     $txt = $_GET['username']. "\n";
     fwrite($myfile, $txt);
     fclose($myfile);
-    echo htmlentities($_GET['username'], ENT_QUOTES, 'UTF-8') . "save in log file";
 }
 
 ?>
