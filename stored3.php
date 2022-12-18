@@ -3,7 +3,7 @@ include("up.php");
 
 if (isset($_POST['add'])){
     $myfile = fopen("stored3Text.txt", "a") or die("Unable to open file!");
-    $txt = $_POST['add']. "\n";
+    $txt = $_POST['add']. "<br>";
     fwrite($myfile, $txt);
     fclose($myfile);
 }
