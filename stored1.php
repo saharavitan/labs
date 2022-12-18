@@ -43,7 +43,7 @@ if (isset($_GET['username'])){
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-            <h3>XSS - Level 1 </h3>
+            <h3>Stored (GET) </h3>
             <hr>
             <form method="get">
                 what is your name ? <br><br> <input type="text" name="username" value="" placeholder="David Cohen">

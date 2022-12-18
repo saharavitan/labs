@@ -1,9 +1,9 @@
 <?php
 include("up.php");
 
-if (isset($_GET['username'])){
-    $myfile = fopen("stored3Text.txt", "w") or die("Unable to open file!");
-    $txt = $_GET['username']. "\n";
+if (isset($_POST['add'])){
+    $myfile = fopen("stored3Text.txt", "a") or die("Unable to open file!");
+    $txt = $_POST['add']. "\n";
     fwrite($myfile, $txt);
     fclose($myfile);
 }
@@ -41,10 +41,10 @@ if (isset($_GET['username'])){
 
     <!-- Begin Page Content -->
     <div class="container-fluid">
-    <h3>XSS - Level 1 </h3>
+        <h3>Stored (POST - Add more content) </h3>
     <hr>
-    <form method="get" action="#">
-        what is your name ? <br><br> <input type="text" name="username" value="" placeholder="David Cohen">
+    <form method="POST" action="#">
+        what is your name ? <br><br> <input type="text" name="add" value="" placeholder="David Cohen">
         <input type="submit" value="ok">
     </form>
     <br>
