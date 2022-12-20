@@ -37,9 +37,7 @@ include("up.php");
             <h3>Stored - Level 1 </h3>
             <hr>
             <?php
-            $myfile = include("stored1Text.txt") or die("Unable to open file!");
-            echo fread($myfile,filesize("stored1Text.txt"));
-            fclose($myfile);
+            include 'stored1Text.txt';
             ?>
 
             <br><br>
