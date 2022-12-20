@@ -37,7 +37,7 @@ include("up.php");
             <h3>Stored - Level 1 </h3>
             <hr>
             <?php
-            include 'stored1Text.txt';
+            include 'stored1Text.php';
             ?>
 
             <br><br>
