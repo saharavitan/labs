@@ -159,6 +159,17 @@
       </li> -->
 
       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#CSRF" aria-expanded="true" aria-controls="Code Injection">
+          <span><b>Code Injection</b></span>
+        </a>
+        <div id="Code Injection" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="code_injection1.php">Level 1</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Cookies" aria-expanded="true" aria-controls="Cookies">
           <span><b>     Stored</b></span>
         </a>
