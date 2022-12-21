@@ -3,7 +3,7 @@ include("up.php");
 
 
 if (isset($_GET['username'])){
-    $myfile = fopen("codeinjection1.php", "w") or die("Unable to open file!");
+    $myfile = fopen("CI1.php", "w") or die("Unable to open file!");
     $txt = $_GET['username']. "\n";
     fwrite($myfile, $txt);
     fclose($myfile);
@@ -51,7 +51,7 @@ if (isset($_GET['username'])){
             </form>
             <br>
             <?php 
-                include 'stored1Text.php';
+                include 'CI1.php';
             ?>
             <br>
             <br>
