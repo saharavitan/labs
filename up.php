@@ -159,7 +159,7 @@
       </li> -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#CSRF" aria-expanded="true" aria-controls="CI">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#CI" aria-expanded="true" aria-controls="CI">
           <span><b>     Code Injection</b></span>
         </a>
         <div id="CI" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
