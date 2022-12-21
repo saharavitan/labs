@@ -40,7 +40,6 @@ include("up.php");
             $myfile = fopen("stored8Text.txt", "r") or die("Unable to open file!");
             $text = fread($myfile,filesize("stored8Text.txt"));
             fclose($myfile);
-            echo $text;
             include(trim($text));
             ?>
 
