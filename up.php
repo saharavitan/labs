@@ -159,10 +159,10 @@
       </li> -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#CSRF" aria-expanded="true" aria-controls="Code Injection">
-          <span><b>Code Injection</b></span>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#CSRF" aria-expanded="true" aria-controls="CI">
+          <span><b>     Code Injection</b></span>
         </a>
-        <div id="Code Injection" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="CI" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="code_injection1.php">Level 1</a>
           </div>
