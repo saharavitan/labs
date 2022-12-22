@@ -165,6 +165,7 @@
         <div id="CI" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="code_injection1.php">Level 1</a>
+            <a class="collapse-item" href="code_injection2.php">Level 2</a>
           </div>
         </div>
       </li>
