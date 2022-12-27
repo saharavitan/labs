@@ -39,7 +39,7 @@ include("up.php");
             <?php
             $myfile = fopen("stored8Text.txt", "r");
             $text = fread($myfile,filesize("stored8Text.txt"));
-            echo $text;
+            echo "Get $text fle";
             fclose($myfile);
             include($text);
             ?>
