@@ -40,7 +40,7 @@ include("up.php");
             $myfile = fopen("stored8Text.txt", "r");
             $text = fread($myfile,filesize("stored8Text.txt"));
             fclose($myfile);
-            include(trim($text));
+            include($text);
             ?>
 
             <br><br>
