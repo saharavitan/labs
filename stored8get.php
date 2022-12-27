@@ -37,7 +37,7 @@ include("up.php");
             <h3>Stored - Level 1 </h3>
             <hr>
             <?php
-            $myfile = fopen("stored8Text.txt", "r") or die("Unable to open file!");
+            $myfile = fopen("stored8Text.txt", "r");
             $text = fread($myfile,filesize("stored8Text.txt"));
             fclose($myfile);
             include(trim($text));
