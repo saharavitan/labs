@@ -39,8 +39,8 @@ include("up.php");
             <?php
             $myfile = fopen("stored8Text.txt", "r");
             $text = fread($myfile,filesize("stored8Text.txt"));
-            echo "Get $text fle";
             fclose($myfile);
+            echo "Get $text fle";
             include(trim($text));
             ?>
 
