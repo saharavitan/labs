@@ -83,7 +83,7 @@ include("up.php");
             </script>
 
             <script>
-                var json_temp = {"id": <?= htmlentities($id, ENT_QUOTES, 'UTF-8') ?>, "first": "<?= htmlentities($first, ENT_QUOTES, 'UTF-8') ?>", "age":<?= $age ?>, "middle":"<?= htmlentities($middle, ENT_QUOTES, 'UTF-8') ?>", "last":"<?= htmlentities($last, ENT_QUOTES, 'UTF-8') ?>"};
+                var json_temp = {"id": "<?= htmlentities($id, ENT_QUOTES, 'UTF-8') ?>", "first": "<?= htmlentities($first, ENT_QUOTES, 'UTF-8') ?>", "age":<?= $age ?>, "middle":"<?= htmlentities($middle, ENT_QUOTES, 'UTF-8') ?>", "last":"<?= htmlentities($last, ENT_QUOTES, 'UTF-8') ?>"};
             </script>
 
 
